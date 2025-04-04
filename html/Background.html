@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="Python" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Background &#8212; Hexahedral Meshing on Swept Geometries Documentation April documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=601dbdee" />
+    <script src="_static/documentation_options.js?v=7f5c047f"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Preparation" href="Preparation.html" />
+    <link rel="prev" title="Hexahedral Meshing on Swept Geometries Documentation" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Preparation.html" title="Preparation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Hexahedral Meshing on Swept Geometries Documentation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Hexahedral Meshing on Swept Geometries Documentation April documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Background</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="background">
+<h1>Background<a class="headerlink" href="#background" title="Link to this heading">¶</a></h1>
+<p>Hexahedral meshing plays a critical role in high-fidelity computational solid mechanics by enabling more accurate and stable simulations, particularly in structural and finite element analyses. Despite its advantages, widespread adoption in industry has been limited due to long lead-time and lack of user friendly tools.
+This user manual introduces a new hex meshin software that leverages the topological sweeping operations to simplify the meshing process. The tool aims to provide an accessible, efficient, and high-quality user experience, particularly for engineers and researchers who may be unfamiliar with traditional hex meshing techniques. Hexehedral meshing demonstrates numerous benefits, however, many exisiting tools require specific geometric conditions and have steep learning curves.
+To address these challenges, the softare uses a sweeping algorithm that divides geometry into similar cross-sections. A hex mesh is first generated on a 2D cross-section and then projected through the volume from one section to the next. This method enhances both efficiency and adaptability, with the swept object defined by its traces and level sets as described below:</p>
+<ol class="lowerroman">
+<li><p>Traces: Traces are path lines that traverse each cross-section of the geometry. They must intersect every level set. The number and placement of traces can be customized within the algorithm to best suit the geometry being meshed.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/Traces_Background.png"><img alt="Image of traces through a basic geometry. These traces are viewed in Paraview." src="_images/Traces_Background.png" style="width: 275px;" /></a>
+</figure>
+</li>
+<li><p>Level Sets: Level sets are discrete slices of the cross-section placed at regular intervals along the sweep path. These sections serve as anchoring points for projecting the mesh. Like traces, the number and position of level sets are configurable within the algorithm.</p></li>
+</ol>
+<blockquote>
+<div><figure class="align-center">
+<a class="reference internal image-reference" href="_images/LevelSets_Background.png"><img alt="Image of level sets of a basic geometry. These level sets are viewed in Paraview." src="_images/LevelSets_Background.png" style="width: 275px;" /></a>
+</figure>
+</div></blockquote>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index.html"
+                          title="previous chapter">Hexahedral Meshing on Swept Geometries Documentation</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="Preparation.html"
+                          title="next chapter">Preparation</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Background.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Preparation.html" title="Preparation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Hexahedral Meshing on Swept Geometries Documentation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Hexahedral Meshing on Swept Geometries Documentation April documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Background</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Hayden Emmertson.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>
